@@ -43,6 +43,11 @@ public class Medico {
     private Endereco endereco;
     
 
+
+    public void excluir() {
+        this.ativo = false;
+    }
+
     public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
         if(dados.nome() != null) {
             this.nome = dados.nome();
